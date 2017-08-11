@@ -1,2 +1,4 @@
 ---
-# tasks file for ansible-core-utilities
+- homebrew:
+    name: coreutils
+  when: ansible_system == 'Darwin'
